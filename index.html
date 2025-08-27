@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Apexcify Technologys</title>
+    <meta
+      name="description"
+      content="Apexcify Technologys - Innovative solutions in web, mobile, and cloud."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a href="#top" class="logo" aria-label="Apexcify Technologys Home">
+          <img src="logo.jpeg" alt="Apexcify Logo" class="logo__img" />
+          <!-- <span class="logo__text">Apexcify Technologys</span> -->
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav class="nav" id="primary-navigation" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+            <li>
+              <a href="#contact" class="nav__link btn btn--sm">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" aria-label="Hero">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <h1 class="hero__title">Build, Innovate, & Scale</h1>
+            <p class="hero__subtitle">
+              We craft high‑performance digital products for forward‑thinking
+              brands.
+            </p>
+            <div class="hero__actions">
+              <a href="#portfolio" class="btn btn--primary">View Work</a>
+              <a href="#contact" class="btn btn--ghost">Get a Quote</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <div class="hero__badge">Trusted by startups & enterprises</div>
+            <img
+              src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=1400&auto=format&fit=crop"
+              alt="Team working on product design"
+              class="hero__image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section section--alt" aria-label="Services">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 class="section__title">Our Services</h2>
+            <p class="section__subtitle">
+              End‑to‑End services to power your next big thing.
+            </p>
+          </header>
+          <div class="grid grid--3 services reveal">
+            <article class="card card--service">
+              <div class="card__icon" aria-hidden="true">💻</div>
+              <h3 class="card__title">Web Development</h3>
+              <p class="card__body">
+                Modern responsive websites and web apps built with performance
+                and accessibility in mind.
+              </p>
+            </article>
+            <article class="card card--service">
+              <div class="card__icon" aria-hidden="true">📱</div>
+              <h3 class="card__title">Mobile Apps</h3>
+              <p class="card__body">
+                Native and cross‑platform apps that deliver delightful user
+                experiences.
+              </p>
+            </article>
+            <article class="card card--service">
+              <div class="card__icon" aria-hidden="true">☁️</div>
+              <h3 class="card__title">Cloud & DevOps</h3>
+              <p class="card__body">
+                Scalable, secure infrastructure with CI/CD pipelines and
+                observability.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section" aria-label="Portfolio">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 class="section__title">Featured Work</h2>
+            <p class="section__subtitle">
+              Browse by category and open images in a lightbox.
+            </p>
+          </header>
+
+          <div
+            class="filters reveal"
+            role="toolbar"
+            aria-label="Portfolio filters"
+          >
+            <button
+              class="filter-btn is-active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button class="filter-btn" data-filter="web" aria-pressed="false">
+              Web
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="mobile"
+              aria-pressed="false"
+            >
+              Mobile
+            </button>
+            <button class="filter-btn" data-filter="cloud" aria-pressed="false">
+              Cloud
+            </button>
+          </div>
+
+          <div
+            class="grid grid--3 gallery reveal"
+            id="gallery"
+            data-active-index="0"
+          >
+            <figure class="gallery__item" data-category="web">
+              <img
+                src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIVcZLHgeXIjyubC3yZS-divlgzBZCoQgLbH9Byiw_ZXpRrfGJ"
+                alt="Web dashboard UI"
+                class="gallery__img"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                A Complete E-commerce Platform
+              </figcaption>
+            </figure>
+            <figure class="gallery__item" data-category="mobile">
+              <img
+                src="https://i.ytimg.com/vi/JGm_pNYUfpI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCjs4ABrPUcdqnU1S_-QTz5DCI3RQ"
+                alt="Mobile app screens"
+                class="gallery__img"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                Book Library App
+              </figcaption>
+            </figure>
+            <figure class="gallery__item" data-category="cloud">
+              <img
+                src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBYRGd2Mszzh5GRgdnfoy99JLMY8bZxPvCqAMrwcSWM9yhhLXt"
+                alt="Cloud infrastructure"
+                class="gallery__img"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                Gym Fitness UI
+              </figcaption>
+            </figure>
+            <figure class="gallery__item" data-category="web">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                alt="Code editor"
+                class="gallery__img"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Headless CMS</figcaption>
+            </figure>
+            <figure class="gallery__item" data-category="mobile">
+              <img
+                src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=1200&auto=format&fit=crop"
+                alt="Phone with graphs"
+                class="gallery__img"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                IoT Companion App
+              </figcaption>
+            </figure>
+            <figure class="gallery__item" data-category="cloud">
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8zNUcuZw3PcplH1xOU-iQ25K2tnUkzVPxhO1C9Afa-fsKvSsr"
+                alt="Server racks"
+                class="gallery__img"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">
+                Python Mini Project
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--alt" aria-label="About">
+        <div class="container">
+          <div class="grid grid--2 about reveal">
+            <div>
+              <h2 class="section__title">About Apexcify</h2>
+              <p>
+                We are a team of engineers, designers, and product thinkers. We
+                help companies ship fast, iterate often, and scale with
+                confidence. Our process is collaborative, transparent, and
+                impact‑driven.
+              </p>
+              <ul class="checklist">
+                <li>Human‑centered design</li>
+                <li>Battle‑tested engineering</li>
+                <li>Secure by default</li>
+              </ul>
+            </div>
+            <div class="about__media">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200&auto=format&fit=crop"
+                alt="Team collaboration"
+                class="about__image"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section" aria-label="Testimonials">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 class="section__title">What Clients Say</h2>
+          </header>
+          <div
+            class="carousel reveal"
+            aria-roledescription="carousel"
+            aria-label="Testimonials"
+          >
+            <button
+              class="carousel__control prev"
+              aria-label="Previous testimonial"
+            >
+              &#10094;
+            </button>
+            <div class="carousel__track" role="group">
+              <article class="testimonial slide is-active">
+                <p class="testimonial__text">
+                  Apexcify helped us launch our platform in record time without
+                  sacrificing quality.
+                </p>
+                <div class="testimonial__meta">
+                  <span class="avatar" aria-hidden="true">👩‍💼</span>
+                  <span
+                    ><strong>Insha Habib</strong>, CEO at Nexora</span
+                  >
+                </div>
+              </article>
+              <article class="testimonial slide">
+                <p class="testimonial__text">
+                  Their engineering rigor and attention to detail is
+                  world‑class.
+                </p>
+                <div class="testimonial__meta">
+                  <span class="avatar" aria-hidden="true">👨‍💼</span>
+                  <span><strong>Sara Khan</strong>, CEO at Innovexa</span>
+                </div>
+              </article>
+              <article class="testimonial slide">
+                <p class="testimonial__text">
+                  Fantastic partners from discovery through delivery. Highly
+                  recommended.
+                </p>
+                <div class="testimonial__meta">
+                  <span class="avatar" aria-hidden="true">👩‍💻</span>
+                  <span><strong>Ayesha Malik</strong>, Founder at BrightCart</span>
+                </div>
+              </article>
+            </div>
+            <button
+              class="carousel__control next"
+              aria-label="Next testimonial"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--alt" aria-label="Contact">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 class="section__title">Contact Us</h2>
+            <p class="section__subtitle">
+              Tell us about project and goals.
+            </p>
+          </header>
+          <form class="contact-form reveal" action="#" method="post" novalidate>
+            <div class="grid grid--2">
+              <label class="form__field">
+                <span class="form__label">Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </label>
+              <label class="form__field">
+                <span class="form__label">Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="email@company.com"
+                  required
+                />
+              </label>
+            </div>
+            <label class="form__field">
+              <span class="form__label">Project Type</span>
+              <select name="type" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="web">Web</option>
+                <option value="mobile">Mobile</option>
+                <option value="cloud">Cloud</option>
+              </select>
+            </label>
+            <label class="form__field">
+              <span class="form__label">Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell us about your project and goal"
+                required
+              ></textarea>
+            </label>
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer">
+      <div class="container footer__inner">
+        <p>
+          © <span id="year"></span> Apexcify Technologys. All rights reserved.
+        </p>
+        <a href="#top" class="to-top" aria-label="Back to top">▲</a>
+      </div>
+    </footer>
+
+    <div
+      class="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+      hidden
+    >
+      <button class="lightbox__close" aria-label="Close">×</button>
+      <button
+        class="lightbox__control lightbox__prev"
+        aria-label="Previous image"
+      >
+        &#10094;
+      </button>
+      <img class="lightbox__image" alt="Expanded portfolio item" />
+      <button class="lightbox__control lightbox__next" aria-label="Next image">
+        &#10095;
+      </button>
+      <div class="lightbox__caption" aria-live="polite"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+    <noscript>
+      JavaScript is required for interactive features like filters, carousel,
+      and lightbox.
+    </noscript>
+  </body>
+</html>
